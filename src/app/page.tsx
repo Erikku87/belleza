@@ -19,6 +19,15 @@ export default function Home() {
   // const [banner, setBanner] = useState(0);
   const [overlay, setOverlay] = useState(false);
   const [imageViewing, setImageViewing] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
 
   const switchOverlay = () => {
     if (overlay) {
@@ -46,6 +55,8 @@ export default function Home() {
           setOverlay,
           imageViewing,
           setImageViewing,
+          isMobile,
+          setIsMobile,
         }}
       >
         <main className={styles.main}>

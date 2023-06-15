@@ -1,7 +1,10 @@
 import Image from "next/image";
 import styles from "../styles/page.module.css";
+import AppContext from "../context/appcontext";
+import { useEffect, useState, useContext } from "react";
 
 const Section = () => {
+  const context: any = useContext(AppContext);
   return (
     <div className={styles.section}>
       <div className={styles.section1}>
@@ -33,7 +36,11 @@ const Section = () => {
         <div className={styles.sectionRight}>
           <div
             className={styles.sectionSvgHeading}
-            style={{ width: "338px", height: "70px", position: "relative" }}
+            style={
+              context.isMobile
+                ? { width: "200px", height: "35px", position: "relative" }
+                : { width: "338px", height: "70px", position: "relative" }
+            }
           >
             <Image
               id="logo"

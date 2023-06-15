@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div className={styles.navigationWrap}>
       <div className={styles.navigationBar} style={{ fontFamily: "Cookie" }}>
-        <div className={styles.navigationLeft}>
+        {/* <div className={styles.navigationLeft}>
           <ul>
             <li className={styles.navigationLi}>
               <div className={styles.navigationLink}>Over Ons</div>
@@ -24,7 +24,7 @@ const Navigation = () => {
               <div className={styles.navigationLink}>Contact</div>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

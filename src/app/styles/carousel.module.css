@@ -67,6 +67,8 @@ bottom:-56px;
 }
 .arrowLeft{
   display: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .arrowLeftImage{
 
@@ -81,6 +83,8 @@ bottom:-56px;
   background: rgba(0, 0, 0, 0.3); 
   transform:scale(1);
   transition: all 0.5s;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .arrowLeft:hover{
   transform:scale(1.15);
@@ -99,7 +103,14 @@ bottom:-56px;
   background: rgba(0, 0, 0, 0.3); 
   transform:scale(1);
   transition: all 0.5s;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 
+}
+
+.arrowRight{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .arrowRight:hover{
 transform:scale(1.15);

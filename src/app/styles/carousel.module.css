@@ -1,0 +1,115 @@
+.carouselWrap{
+
+  display: flex;
+width:100%;
+height:450px;
+position: relative;
+
+border-radius: 8px;
+}
+.banner{
+  height:450px;
+
+}
+.carouselLeft{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width:60px;
+  height:450px;
+  left:0px;
+
+
+}
+.underbanner{
+
+position: absolute;
+bottom:-56px;
+    width: 100%;
+    height:100px;
+  z-index:99;
+}
+
+.carouselView{
+  position: relative;
+  width:100%;
+  height:450px;
+  background-color: white;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+.carouselRight{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:60px;
+  height:450px;
+  right:0px;
+
+  
+}
+.carouselBanners{
+
+  position: absolute;
+  display: flex;
+  height:450px;
+  transition: all 0.5s ease-in-out;
+  left:0px;
+  
+}
+.bannerImage{
+  width:800px;
+}
+.arrowLeft{
+  display: none;
+}
+.arrowLeftImage{
+
+  padding:10px;
+  width:60px;
+  height:60px;;
+  display: flex;
+  cursor: pointer;
+  border-top:2px solid #ffcb62;
+  border-bottom:2px solid #ffcb62;
+  border-right:2px solid #ffcb62;
+  background: rgba(0, 0, 0, 0.3); 
+  transform:scale(1);
+  transition: all 0.5s;
+}
+.arrowLeft:hover{
+  transform:scale(1.15);
+  
+  }
+
+.arrowRightImage{
+  padding:10px;
+  width:60px;
+  height:60px;
+
+  cursor: pointer;
+  border-top:2px solid #ffcb62;
+  border-bottom:2px solid #ffcb62;
+  border-left:2px solid #ffcb62;
+  background: rgba(0, 0, 0, 0.3); 
+  transform:scale(1);
+  transition: all 0.5s;
+
+}
+.arrowRight:hover{
+transform:scale(1.15);
+
+}
+
+@media only screen and (max-width: 768px) {
+  .carouselWrap{
+
+    display: none;
+
+  }
+  }

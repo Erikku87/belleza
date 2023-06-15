@@ -1,95 +1,86 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import Image from "next/image";
+import styles from "./styles/page.module.css";
+import stylesCarousel from "./styles/carousel.module.css";
+import { useEffect, useState, Provider } from "react";
+import Navigation from "./components/navigation";
+import Section from "./components/section";
+import Footer from "./components/footer";
+import Carousel from "./components/carousel";
+import AppContext from "./context/appcontext";
+import Gallery from "./components/gallery";
+import About from "./components/about";
+import Section2 from "./components/section2";
+import Tarieven from "./components/tarieven";
 
 export default function Home() {
+  // const [widthBanner, setWidthBanner] = useState<number>(0);
+  // const [bannerPosition, setBannerPosition] = useState(0);
+  // const [banner, setBanner] = useState(0);
+  const [overlay, setOverlay] = useState(false);
+  const [imageViewing, setImageViewing] = useState("");
+
+  const switchOverlay = () => {
+    if (overlay) {
+      setOverlay(false);
+      const picture = document.getElementById(imageViewing);
+      picture!.style.transform = "scale(1.0)";
+      picture!.style.position = "static";
+      picture!.style.zIndex = "0";
+    } else {
+      setOverlay(true);
+    }
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <>
+      <AppContext.Provider
+        value={{
+          // widthBanner,
+          // setWidthBanner,
+          // bannerPosition,
+          // setBannerPosition,
+          // banner,
+          // setBanner,
+          overlay,
+          setOverlay,
+          imageViewing,
+          setImageViewing,
+        }}
+      >
+        <main className={styles.main}>
+          <Navigation />
+          <div className={styles.goldBorder}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              className={styles.mainLogo}
+              id="logo"
+              src="/rond_new_color.svg"
+              alt="404"
+              width="280"
+              height="280"
             />
-          </a>
+            <Carousel />
+            <About />
+            <Section />
+
+            <Gallery switchOverlay={switchOverlay} />
+            <Tarieven />
+          </div>
+        </main>
+        <Footer />
+        <div
+          onClick={switchOverlay}
+          className={styles.overlay}
+          style={{
+            backgroundColor: overlay
+              ? "rgba(0, 0, 0, 0.7)"
+              : "rgba(0, 0, 0, 0)",
+            height: overlay ? "100%" : "0%",
+          }}
+        >
+          {" "}
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </AppContext.Provider>
+    </>
+  );
 }

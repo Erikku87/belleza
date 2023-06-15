@@ -1,0 +1,90 @@
+.navigationWrap{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:80px;
+  margin-top: 100px;
+}
+.navigationBar{
+  
+  width: 80%;
+  padding: 0% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:80px;
+  color:white;
+  
+}
+.logo{
+
+}
+
+.navigtaionMenu{
+
+}
+.navigationLi{
+
+}
+.navigationLink{
+  font-size:36px;
+  color:#d6a556;
+}
+.navigationRight{
+  width: 50%;
+}
+.navigationLeft{
+  width: 50%;
+}
+.navigationRight ul{
+  
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap:60px;
+
+}
+
+.navigationLeft ul{
+  list-style: none;
+  display: flex;
+  gap:60px;
+
+}
+.navigationLeft ul li{
+  transform: scale(1.0);
+  font-size: 20px;
+  background: -webkit-linear-gradient(#ebc442,#ffcb62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-out
+}
+
+.navigationRight ul li{
+  transform: scale(1.0);
+  font-size: 20px;
+  background: -webkit-linear-gradient(#ebc442,#ffcb62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-out
+}
+.navigationLeft ul li:hover{
+
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.navigationRight ul li:hover{
+
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .navigationWrap{
+   
+    display: none;
+
+  }
+}

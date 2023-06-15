@@ -1,0 +1,44 @@
+.section{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.aboutWrap{
+  padding: 130px 0px 50px 0px;
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:40px
+}
+
+.aboutHeading{
+font-size: 70px;
+color:#d6a556;
+}
+
+.aboutText{
+  color:white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ffcb62;
+  
+}
+
+.aboutText p{
+  padding:50px;
+  font-size:16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutHeading{
+    margin-top:50px;
+    font-size: 32px;
+    color:#d6a556;
+    }
+  }

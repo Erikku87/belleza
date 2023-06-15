@@ -1,0 +1,110 @@
+
+.footerBar{
+    margin-top:100px;
+    width:100%;
+    background-color: black;
+}
+.footerWrap{
+padding:0px 120px 0px 120px;
+width:100%;
+}
+
+.footerContent{
+
+    display: flex;
+flex-direction: column;
+width:100%;
+background-color:rgb(255, 255, 255);
+
+color:white;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color:black;
+color:white;
+font-size: 10px;
+min-width: 500px;
+}
+.socialHeading{
+    margin-bottom:15px;
+}
+.socialWrap{
+    padding: 20px 0px 50px 0px;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+}
+
+.socialMediaLinks{
+    display:flex;
+    flex-direction: column;
+}
+
+.socialImages{
+    display:flex;
+    gap:30px;
+}
+
+.gameLinks{
+display:flex;
+
+}
+.divider{
+    width:100%;
+    padding: 0px 50px 0px 50px
+}
+.footerBottom{
+    display: flex;
+}
+.websiteLinks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    width:100%;
+    background-color:black;
+}
+.websiteLinks ul{
+    padding:20px;
+    list-style-type:none;
+    display: flex;
+    gap:40px;
+    background-color:black;
+
+}
+
+.websiteLinks img{
+    margin: 0px 20px 10px 0px;
+}
+.websiteLinks ul li{
+    font-size:14px;
+    cursor: pointer;
+}
+.socialIcon{
+    cursor: pointer;
+}
+.socialIcon:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.gameLinks img{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.gameLinks img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.footerLogo{
+    border-right: 1px solid white;
+    margin-right:20px;
+}

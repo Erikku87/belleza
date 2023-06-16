@@ -21,13 +21,19 @@ export default function Home() {
   const [imageViewing, setImageViewing] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
+  const isMobileSize = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
-  }, []);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", isMobileSize);
+
+    // return () => window.removeEventListener('resize', isMobileSize);
+  }, [isMobileSize]);
 
   const switchOverlay = () => {
     if (overlay) {

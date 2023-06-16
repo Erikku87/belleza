@@ -15,12 +15,11 @@ const Gallery = ({ switchOverlay }: any) => {
     } else {
       context.setImageViewing(id);
       const picture = document.getElementById(id);
-
       picture!.style.position = "fixed";
       picture!.style.zIndex = "99";
-      picture!.style.top = "35%";
-      picture!.style.left = "44%";
-      picture!.style.transform = "scale(3.0)";
+      picture!.style.top = "50%";
+      picture!.style.left = "50%";
+      picture!.style.transform = "translate(-50%, -50%) scale(3.0)";
 
       context.setOverlay(true);
     }
@@ -51,7 +50,7 @@ const Gallery = ({ switchOverlay }: any) => {
                 height="210"
                 style={
                   context.isMobile
-                    ? { width: "120px", height: "120px" }
+                    ? { width: "140px", height: "140px" }
                     : { width: "210px", height: "210px" }
                 }
               />

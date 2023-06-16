@@ -70,7 +70,12 @@ filter: drop-shadow(1px 5px 5px rgb(0 0 0 / 0.4));
   gap:50px;
   background-color: black;
 }
+.lashartproLink:hover{
+  color:#d6a556;
+  transition: all 0.3s;
+  transform: scale(1.2);
 
+}
 .section1{
   display: flex;
   width:100%;

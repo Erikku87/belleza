@@ -140,8 +140,8 @@ left:-100px;
     margin: 60px 0px;
   }
   .gridItem{
-    width:120px;
-    height:120px;
+    width:140px;
+    height:140px;
     background-color: #444;
     color: #fff;
     transform: scale(1.0);

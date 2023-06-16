@@ -60,7 +60,7 @@ const Section = () => {
             <a
               target="_blank"
               href="https://www.lashartpro.com/nl/"
-              style={{ color: "#0000EE" }}
+              className={styles.lashartproLink}
             >
               <br />
               <br />- https://www.lashartpro.com

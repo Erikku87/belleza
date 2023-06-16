@@ -12,16 +12,12 @@ const Section2 = () => {
           One by One Extensions
         </div>
         <p>
-          Met de One by One techniek wordt er op elke gezond natuurlijke wimper
-          één extension geplaatst. De extensions worden met een speciale lijm
-          aangebracht. Extensions zijn verkrijgbaar in verschillende lengtes,
-          diktes en kleuren, zodat ik de perfecte stijl kan creëren. Met de
-          juiste styling lengte krul en dikte en gezonde wimpers krijg je een
-          verfrissende look. Een oog bevat gemiddeld tussen de 90-120
-          natuurlijke wimpers. Je verliest per dag 2 tot 5 wimpers per dag. De
-          natuurlijke wimpers vallen niet tegelijkertijd daarom is het
-          verstandig als je mooi look wilt behouden om de 2 a 3 weken terug te
-          komen voor een opvul.
+          Bij Belleza Stylist werken wij met producten van Lash Art Pro. Deze
+          producten zijn erkend op de Nederlandse markt als van zeer hoge
+          kwaliteit. We willen anders zijn dan de huidige markt, de lat ligt
+          hoog, maar daar werken we het beste op. Al onze producten worden
+          getest door de beste artiesten uit verschillende landen. Het komt pas
+          op de markt als alles klopt.
         </p>
       </div>
       <div className={styles.sectionLeft}>

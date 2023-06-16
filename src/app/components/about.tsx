@@ -13,14 +13,10 @@ const About = () => {
         </div>
         <div className={styles.aboutText}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at
-            maximus diam. Donec luctus ante eget lorem sagittis, quis accumsan
-            sapien sagittis. Integer porttitor, lacus at sagittis molestie,
-            tortor est rutrum dui, at volutpat ipsum sem id turpis. In hac
-            habitasse platea dictumst. Proin vel laoreet metus. Ut vel enim
-            diam. Aliquam vestibulum aliquet arcu sit amet porttitor.
-            Pellentesque metus mauris, tincidunt ullamcorper volutpat dignissim,
-            interdum id enim. Integer vel ligula non ex elementum pharetra.
+            Bellezastylist is een salon die voornamelijk gericht is op
+            wimperextensions en wimperlift. Alle diensten zijn hygiënisch,
+            zorgvuldig en persoonlijke gericht. Ik zorg de juiste styling voor
+            jou.
           </p>
         </div>
       </div>

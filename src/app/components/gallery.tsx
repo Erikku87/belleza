@@ -49,6 +49,11 @@ const Gallery = ({ switchOverlay }: any) => {
                 alt="404"
                 width="210"
                 height="210"
+                style={
+                  context.isMobile
+                    ? { width: "120px", height: "120px" }
+                    : { width: "210px", height: "210px" }
+                }
               />
             </div>
           ))}

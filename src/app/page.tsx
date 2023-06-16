@@ -67,8 +67,8 @@ export default function Home() {
               id="logo"
               src="/rond_new_color.svg"
               alt="404"
-              width="280"
-              height="280"
+              width="320"
+              height="320"
             />
             <Carousel />
             <About />

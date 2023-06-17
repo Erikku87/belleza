@@ -44,7 +44,7 @@ const Section = () => {
           >
             <Image
               id="logo"
-              src="/lashartpro_logo_white.svg"
+              src="/lashartpro_logo_white.png"
               alt="404"
               fill
               style={{ objectFit: "cover" }}

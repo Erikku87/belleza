@@ -149,6 +149,12 @@ color:white;
 }
 
 @media only screen and (max-width: 768px) {
+  .sectionSvgHeading{
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
 .section1{
   flex-direction: column;
 }
@@ -179,5 +185,9 @@ color:white;
 
 .section p{
   text-align: center;
+}
+
+.section{
+  margin: 30px 0px 30px 0px;
 }
 }

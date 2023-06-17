@@ -16,10 +16,7 @@
   gap:40px
 }
 
-.aboutHeading{
-font-size: 70px;
-color:#d6a556;
-}
+
 
 .aboutText{
   color:white;
@@ -34,17 +31,24 @@ color:#d6a556;
   padding:50px;
   font-size:20px;
 }
-
+.aboutHeading{
+  font-size: 70px;
+  color:#d6a556;
+  }
 @media only screen and (max-width: 768px) {
   .aboutHeading{
     margin-top:50px;
     font-size: 28px;
     color:#d6a556;
     }
-    .aboutText{
+    .aboutText p{
 
       font-size: 12px;
 
       
+    }
+    .aboutHeading{
+      padding-top:50px;
+
     }
   }

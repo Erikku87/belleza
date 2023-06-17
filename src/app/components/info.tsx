@@ -43,7 +43,10 @@ const Info = () => {
         <div className={styles.detailsTabel}>
           <div
             className={styles.detailsTabelHeading}
-            style={{ fontFamily: "Great Vibes" }}
+            style={{
+              fontFamily: "Great Vibes",
+              borderTop: "3px solid #d6a556",
+            }}
           >
             Locatie
           </div>

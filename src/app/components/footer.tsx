@@ -66,10 +66,9 @@ export const Footer = () => {
                   <Image src="/b.svg" alt="404" width="110" height="60" />
                 </div>
                 <ul>
-                  <li>Over Ons</li>
+                  <li>Certificaten</li>
                   <li>Eigen risico</li>
-                  <li>Privacy Policy</li>
-                  <li>Contact</li>
+                  <li>Tarieven</li>
                 </ul>
               </div>
               <div className={styles.copyright}>

@@ -36,9 +36,19 @@
   color:#d6a556;
   }
 @media only screen and (max-width: 768px) {
+
+  .aboutText p{
+    padding:10px;
+
+  }
+  .aboutText{
+
+    border: none;
+    
+  }
   .aboutHeading{
     margin-top:50px;
-    font-size: 26px;
+    font-size: 28px;
     color:#d6a556;
     }
     .aboutText p{
@@ -50,5 +60,13 @@
     .aboutHeading{
       padding-top:50px;
 
+
+      
     }
+    .aboutWrap{
+      
+      width:90%;
+      gap:20px
+    }
+    
   }

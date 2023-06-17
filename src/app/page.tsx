@@ -12,6 +12,7 @@ import Gallery from "./components/gallery";
 import About from "./components/about";
 import Section2 from "./components/section2";
 import Tarieven from "./components/tarieven";
+import Info from "./components/info";
 
 export default function Home() {
   // const [widthBanner, setWidthBanner] = useState<number>(0);
@@ -81,6 +82,7 @@ export default function Home() {
             <Section />
 
             <Gallery switchOverlay={switchOverlay} />
+            <Info />
             <Tarieven />
           </div>
         </main>

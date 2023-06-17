@@ -2,22 +2,22 @@
     "banners": [
         {
             "id": "1",
-            "heading": "1",
-            "subheading": "1",
+            "heading": "Welkom op BellezaStylist.nl!",
+            "subheading": "De nummer 1 lashes specialist in Rijswijk",
             "text": "1",
             "image": "banner1.png"
         },
         {
             "id": "2",
-            "heading": "1",
+            "heading": "One By One Extensions",
             "subheading": "1",
-            "text": "1",
+            "text": "Met de One by One techniek wordt er op elke gezond natuurlijke wimper één extension geplaatst.",
             "image": "banner2.png"
         },
         {
             "id": "3",
-            "heading": "1",
-            "subheading": "1",
+            "heading": "Lash Art Pro",
+            "subheading": "Wij werken met materiaal van hoge kwaliteit!",
             "text": "1",
             "image": "banner3.png"
         },

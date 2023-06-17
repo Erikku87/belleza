@@ -1,7 +1,10 @@
 import Image from "next/legacy/image";
 import styles from "../styles/details.module.css";
+import { useEffect, useState, useContext } from "react";
+import AppContext from "../context/appcontext";
 
 const Info = () => {
+  const context: any = useContext(AppContext);
   return (
     <div className={styles.detailsWrap}>
       <div className={styles.detailsBorder}>
@@ -43,10 +46,11 @@ const Info = () => {
         <div className={styles.detailsTabel}>
           <div
             className={styles.detailsTabelHeading}
-            style={{
-              fontFamily: "Great Vibes",
-              borderTop: "3px solid #d6a556",
-            }}
+            style={
+              context.isMobile
+                ? { fontFamily: "Great Vibes", borderTop: "3px solid #d6a556" }
+                : { fontFamily: "Great Vibes" }
+            }
           >
             Locatie
           </div>

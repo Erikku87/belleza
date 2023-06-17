@@ -2,10 +2,34 @@ import { time } from "console";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import styles from "../styles/footer.module.css";
+import AppContext from "../context/appcontext";
+import { useEffect, useState, useContext } from "react";
 
-export const Footer = () => {
+export const Footer = ({}: any) => {
+  const context: any = useContext(AppContext);
+
+  const popRisico = () => {
+    // const popopWrap = document.getElementById("popupWrap") as HTMLDivElement;
+    if (!context.popRisico) {
+      context.setPopupRisico(true);
+      context.setOverlay(true);
+    } else {
+      context.setPopupRisico(false);
+      context.setOverlay(false);
+    }
+  };
+
+  const popTarieven = () => {
+    // const popopWrap = document.getElementById("popupWrap") as HTMLDivElement;
+    if (!context.popupTarieven) {
+      context.setPopupTarieven(true);
+      context.setOverlay(true);
+    } else {
+      context.setPopupTarieven(false);
+      context.setOverlay(false);
+    }
+  };
   return (
     <>
       <div className={styles.footerBar}>
@@ -67,8 +91,8 @@ export const Footer = () => {
                 </div>
                 <ul>
                   <li>Certificaten</li>
-                  <li>Eigen risico</li>
-                  <li>Tarieven</li>
+                  <li onClick={() => popRisico()}>Eigen risico</li>
+                  <li onClick={() => popTarieven()}>Tarieven</li>
                 </ul>
               </div>
               <div className={styles.copyright}>

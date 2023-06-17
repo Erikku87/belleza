@@ -13,6 +13,8 @@ import About from "./components/about";
 import Section2 from "./components/section2";
 import Tarieven from "./components/tarieven";
 import Info from "./components/info";
+import PopupTarieven from "./components/popupTarieven";
+import PopupRisico from "./components/popupRisico";
 
 export default function Home() {
   // const [widthBanner, setWidthBanner] = useState<number>(0);
@@ -21,7 +23,8 @@ export default function Home() {
   const [overlay, setOverlay] = useState(false);
   const [imageViewing, setImageViewing] = useState("");
   const [isMobile, setIsMobile] = useState(false);
-
+  const [popupRisico, setPopupRisico] = useState(false);
+  const [popupTarieven, setPopupTarieven] = useState(false);
   const isMobileSize = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
@@ -29,7 +32,11 @@ export default function Home() {
       setIsMobile(false);
     }
   };
+  useEffect(() => {
+    isMobileSize();
 
+    // return () => window.removeEventListener('resize', isMobileSize);
+  }, []);
   useEffect(() => {
     window.addEventListener("resize", isMobileSize);
 
@@ -39,12 +46,32 @@ export default function Home() {
   const switchOverlay = () => {
     if (overlay) {
       setOverlay(false);
-      const picture = document.getElementById(imageViewing);
-      picture!.style.transform = "scale(1.0)";
-      picture!.style.position = "static";
-      picture!.style.zIndex = "0";
     } else {
       setOverlay(true);
+    }
+  };
+
+  const resetImage = () => {
+    const picture = document.getElementById(imageViewing);
+    picture!.style.transform = "scale(1.0)";
+    picture!.style.position = "static";
+    picture!.style.zIndex = "0";
+  };
+
+  const overLayImage = () => {
+    resetImage();
+    switchOverlay();
+  };
+
+  const handleButtonOverlay = () => {
+    if (popupTarieven) {
+      switchOverlay();
+      setPopupTarieven(false);
+    } else if (popupRisico) {
+      switchOverlay();
+      setPopupRisico(false);
+    } else {
+      overLayImage();
     }
   };
 
@@ -64,6 +91,10 @@ export default function Home() {
           setImageViewing,
           isMobile,
           setIsMobile,
+          popupRisico,
+          setPopupRisico,
+          popupTarieven,
+          setPopupTarieven,
         }}
       >
         <main className={styles.main}>
@@ -74,21 +105,26 @@ export default function Home() {
               id="logo"
               src="/rond_new_color.svg"
               alt="404"
-              width="320"
-              height="320"
+              width="350"
+              height="350"
+              style={
+                isMobile
+                  ? { width: "300px", height: "300px" }
+                  : { width: "350px", height: "350px" }
+              }
             />
             <Carousel />
             <About />
             <Section />
 
-            <Gallery switchOverlay={switchOverlay} />
+            <Gallery overLayImage={overLayImage} />
             <Info />
-            <Tarieven />
+            <Tarieven switchOverlay={switchOverlay} />
           </div>
         </main>
         <Footer />
         <div
-          onClick={switchOverlay}
+          onClick={handleButtonOverlay}
           className={styles.overlay}
           style={{
             backgroundColor: overlay
@@ -99,6 +135,8 @@ export default function Home() {
         >
           {" "}
         </div>
+        <PopupTarieven />
+        <PopupRisico />
       </AppContext.Provider>
     </>
   );

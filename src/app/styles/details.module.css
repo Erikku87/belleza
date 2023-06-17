@@ -47,7 +47,26 @@
   align-items: center;
   width: 25%;
 }
+.googlemapsImage{
+  transition: all 3s;
 
+}
+.googleMapsLink{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+.googleMapsLink a{
+  margin-top:10px;
+  padding:10px;
+  border: 1px solid #ffcb62;
+}
+.googlemapsImage:hover {
+  transform: scale(2.2);
+  transition: all 8s;
+}
 .detailsTabelHeading {
   margin-bottom: 20px;
   padding: 20px 30px;

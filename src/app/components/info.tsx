@@ -57,7 +57,7 @@ const Info = () => {
           <br />
           <div className={styles.googleMaps}>
             <Image
-              className={styles.mainLogo}
+              className={styles.googlemapsImage}
               id="logo"
               src="/googlemaps.png"
               alt="404"
@@ -65,6 +65,14 @@ const Info = () => {
               objectFit="cover"
               objectPosition="center"
             />
+          </div>
+          <div className={styles.googleMapsLink}>
+            <a
+              target="blank_"
+              href="https://www.google.com/maps/place/Admiraal+Helfrichsingel+1,+2287+TA+Rijswijk/@52.0344981,4.320504,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5b69ba6fa2af9:0x2d073c1eab83e1f0!8m2!3d52.0344981!4d4.3230789!16s%2Fg%2F11c2fksy_0?entry=ttu"
+            >
+              Google Maps link
+            </a>
           </div>
         </div>
       </div>

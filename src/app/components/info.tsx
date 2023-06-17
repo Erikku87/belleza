@@ -71,6 +71,7 @@ const Info = () => {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              priority={true}
             />
           </div>
           <div className={styles.googleMapsLink}>

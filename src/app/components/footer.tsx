@@ -41,14 +41,6 @@ export const Footer = ({}: any) => {
                   <h5>Follow us: </h5>
                 </div>
                 <div className={styles.socialImages}>
-                  <Image
-                    id="socialImage"
-                    src="/youtube.svg"
-                    alt="404"
-                    className={styles.socialIcon}
-                    width="50"
-                    height="35"
-                  />
                   <a
                     href="https://www.instagram.com/bellezastylist/"
                     rel="noreferrer"
@@ -63,14 +55,20 @@ export const Footer = ({}: any) => {
                       height="35"
                     />
                   </a>
-                  <Image
-                    id="socialImage"
-                    src="/facebook.svg"
-                    alt="404"
-                    className={styles.socialIcon}
-                    width="35"
-                    height="35"
-                  />
+                  <a
+                    href="https://www.facebook.com/Bellezalashstylist/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <Image
+                      id="socialImage"
+                      src="/facebook.svg"
+                      alt="404"
+                      className={styles.socialIcon}
+                      width="35"
+                      height="35"
+                    />
+                  </a>
                   <Image
                     id="socialImage"
                     src="/linkedin.svg"

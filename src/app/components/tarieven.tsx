@@ -37,7 +37,9 @@ const Tarieven = ({ switchOverlay }: any) => {
             Tarieven
           </div>
           <div className={styles.tarievenTabel} onClick={() => popTarieven()}>
-            Click Hier om de tarieven te bekijken!
+            <div className={styles.tarievenButton}>
+              Click Hier om de tarieven te bekijken!
+            </div>
           </div>
         </div>
       </div>

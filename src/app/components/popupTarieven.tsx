@@ -23,7 +23,13 @@ const PopupTarieven = ({ switchOverlay }: any) => {
       }
     >
       <div className={styles.popupContent}>
-        <Image src={"/prijzenlijst.png"} alt="404" width="600" height="750" />
+        <Image
+          src={"/prijzenlijst.png"}
+          alt="404"
+          width="600"
+          height="750"
+          priority={true}
+        />
       </div>
     </div>
   );

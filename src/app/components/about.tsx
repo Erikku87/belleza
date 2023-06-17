@@ -9,7 +9,7 @@ const About = () => {
           className={styles.aboutHeading}
           style={{ fontFamily: "Great Vibes" }}
         >
-          Welkom bij Belleza Stylist!
+          Welkom bij BellezaStylist!
         </div>
         <div className={styles.aboutText}>
           <p>

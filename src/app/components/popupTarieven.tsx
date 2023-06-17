@@ -28,6 +28,11 @@ const PopupTarieven = ({ switchOverlay }: any) => {
           alt="404"
           width="600"
           height="750"
+          // style={
+          //   context.isMobile
+          //     ? { width: "100%", height: "auto" }
+          //     : { width: "600", height: "750" }
+          // }
           priority={true}
         />
       </div>

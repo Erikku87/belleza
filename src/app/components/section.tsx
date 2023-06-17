@@ -38,7 +38,7 @@ const Section = () => {
             className={styles.sectionSvgHeading}
             style={
               context.isMobile
-                ? { width: "0px", height: "73px", position: "relative" }
+                ? { width: "100%", height: "68px", position: "relative" }
                 : { width: "338px", height: "70px", position: "relative" }
             }
           >

@@ -35,6 +35,11 @@ const Carousel = () => {
     };
   }, [currentBanner, widthBanner]); // Add currentBanner as a dependency to trigger the loop on changes
 
+  useEffect(() => {
+    window.addEventListener("resize", setBannerWidth);
+    bannerReset();
+    // return () => window.removeEventListener('resize', isMobileSize);
+  }, [widthBanner]);
   // Determine the banners initial width depending on viewport width
   const setBannerWidth = () => {
     const carouselViewElement =

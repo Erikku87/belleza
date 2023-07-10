@@ -9,51 +9,35 @@ import AppContext from "../context/appcontext";
 const Gallery = ({ overLayImage }: any) => {
   const context: any = useContext(AppContext);
 
-  const viewImage = (id: any) => {
-    context.setImageViewing(id);
-    if (context.overlay) {
-      overLayImage();
-    } else {
-      const picture = document.getElementById(id);
-      picture!.style.position = "fixed";
-      picture!.style.zIndex = "99";
-      picture!.style.top = "50%";
-      picture!.style.left = "50%";
-      picture!.style.transform = "translate(-50%, -50%) scale(3.0)";
-
+  const popTarieven = (pic: any) => {
+    // const popopWrap = document.getElementById("popupWrap") as HTMLDivElement;
+    context.setCurrentPort(pic);
+    if (!context.popupTarieven) {
+      context.setPopupTarieven(true);
       context.setOverlay(true);
+    } else {
+      context.setPopupTarieven(false);
+      context.setOverlay(false);
     }
   };
 
+  const closeTarieven = () => {
+    context.setPopupTarieven(false);
+    context.setOverlay(false);
+  };
+
   return (
-    <div className={styles.galleryBorder}>
+    <div id="galleryBorder" className={styles.galleryBorder}>
       <div className={styles.galleryWrap}>
-        <div
-          className={styles.galleryHeading}
-          style={{ fontFamily: "Great Vibes" }}
-        >
-          Belleza Gallery
-        </div>
         <div className={styles.galleryGrid}>
           {galleryData.pictures.map((picture: Picture) => (
             <div
               key={picture.id}
               id={picture.id}
               className={styles.gridItem}
-              onClick={() => viewImage(picture.id)}
+              onClick={() => popTarieven(picture)}
             >
-              <Image
-                onClick={() => viewImage(picture.id)}
-                src={"/" + picture.image}
-                alt="404"
-                width="210"
-                height="210"
-                style={
-                  context.isMobile
-                    ? { width: "140px", height: "140px" }
-                    : { width: "210px", height: "210px" }
-                }
-              />
+              <Image src={picture.image} alt="Picture of the author" fill />
             </div>
           ))}
         </div>

@@ -1,88 +1,169 @@
 {
     "pictures": [
         {
+            "id": "0",
+            "heading": "Symbaloo",
+            "subheading": "",
+            "text": "Symbaloo is a platform which helps you manage bookmarks. They are located in Delft. I mainly worked on their gamification project and account reorganisation. I had a great year working there, learned a lot of new stuff and met some awesome colleagues!",
+            "image": "/images/symbaloo.svg",
+            "codes": "HTML, SASS, CSS, Javascript, Elm, GraphQL",
+            "tools": "Illustrator, Photo Shop, VsCode, Mysql Workbench",
+            "link": "https://symbaloo.com",
+            "video": ""
+        },
+        {
             "id": "1",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers1.png"
+            "heading": "Octo",
+            "subheading": "",
+            "text": "I Started working at Octo as a freelance developer to create their first website. I have worked there for a year and created the design, front-end and back-end for the website. Now a few years later they turned into to Spotr.ai. Watch the video to see what I built for them.",
+            "image": "/images/octo.jpg",
+            "codes": "HTML, CSS, React, SVG",
+            "tools": "Wordpress, Illustrator, Photo Shop, Figma, VPS",
+            "link": "https://spotr.ai",
+            "video": "/movies/octo_frontpage.mp4"
         },
         {
             "id": "2",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers2.png"
+            "heading": "waarderuil",
+            "subheading": "",
+            "text": "Waarderuil.nl is one of my personal projects. The goal is to create a platform that makes it easy for people to find and trade the right stuff so we can make this planet and it's resources more sustainable.",
+            "image": "/images/waarderuil.jpg",
+            "codes": "HTML, CSS, JQuery, Javascript",
+            "tools": "Illustrator, Photo Shop, Figma",
+            "link": "",
+            "video": ""
         },
         {
             "id": "3",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers3.png"
+            "heading": "Zenchi Records",
+            "subheading": "",
+            "text": "I'm creating a website for a music making company called Zenchi Records. I have coded the application in nextjs and runs on AWS amplify",
+            "image": "/images/zenchirecords.jpg",
+            "codes": "HTML, CSS, Next JS, React",
+            "tools": "Illustrator, Photo Shop, Figma, AWS",
+            "link": "https://zenchirecords.com",
+            "video": ""
         },
         {
             "id": "4",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers4.png"
+            "heading": "Spin a movie",
+            "subheading": "",
+            "text": "Spin a movie is a website where you go when you don't know what to watch. Currently you can only search movies by keyword. My plans are to create an AI that will pick a movie for you to watch based on selected preferences.",
+            "image": "/images/spinamovie.jpg",
+            "codes": "HTML, CSS, nextjs, react, Rest API",
+            "tools": "Illustrator, Photo Shop",
+            "link": "https://spinamovie.com",
+            "video": ""
         },
         {
             "id": "5",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers5.png"
+            "heading": "Rumah-Afra",
+            "subheading": "",
+            "text": "Rumah Afra is an artist. She is a dancer who likes to write and show her minimalistic lifestyle. Together we have come to a website which expresses exactly who she is.",
+            "image": "/images/rumah-afra.jpg",
+            "codes": "HTML, CSS, Javascript, PHP",
+            "tools": "Wordpress, Illustrator, Photo Shop",
+            "link": "",
+            "video": ""
         },
         {
             "id": "6",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers6.png"
+            "heading": "Ninetysix Music",
+            "subheading": "",
+            "text": "Ninetysixmusic is an artist who makes music. Together we have created a really out of the box website to express her image as a musician.",
+            "image": "/images/96.jpg",
+            "codes": "HTML, CSS, Javascript",
+            "tools": "Wordpress, Illustrator, Photo Shop",
+            "link": "https://ninetysixmusic.com",
+            "video": ""
         },
         {
             "id": "7",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers7.png"
+            "heading": "Woordenschat",
+            "subheading": "",
+            "text": "OWG is an organisation that creates educational games for children. They asked me to make a game where people could learn a language trough pictures and words",
+            "image": "/images/woordenschat.jpg",
+            "codes": "HTML, CSS, Javascript, PHP, XML",
+            "tools": "Illustrator, Photo Shop",
+            "link": "https://www.youtube.com/watch?v=Tn8zJkGMKiU&t=28s",
+            "video": "/movies/woordenschat.mp4"
         },
         {
             "id": "8",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers8.png"
+            "heading": "Belleza Stylist",
+            "subheading": "",
+            "text": "N/A",
+            "image": "/images/belleza.png",
+            "codes": "HTML, SASS, CSS, Next JS",
+            "tools": "Illustrator, Photo Shop, VsCode, Mysql Workbench",
+            "link": "",
+            "video": ""
         },
         {
             "id": "9",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers9.png"
+            "heading": "Platysign",
+            "subheading": "",
+            "text": "Platysign was my own first IT company which i started with some friends i knew from college. We did this for a couple of years but then went our own ways.",
+            "image": "/images/platysign.jpg",
+            "codes": "HTML, CSS, PHP",
+            "tools": "Wordpress, Illustrator, Photo Shop, Sketch",
+            "link": "",
+            "video": ""
         },
         {
             "id": "10",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers10.png"
+            "heading": "Hoornse",
+            "subheading": "",
+            "text": "De Hoornse Damper is a store that sells vapes and supplies. I made a website for browsing their products and making a store order.",
+            "image": "/images/hoornse.jpg",
+            "codes": "HTML, CSS, Javascript, PHP",
+            "tools": "Wordpress, Illustrator, Photo Shop",
+            "link": "",
+            "video": ""
         },
         {
             "id": "11",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers11.png"
+            "heading": "Photomaster",
+            "subheading": "",
+            "text": "Photomaster was a photo competition where people had to send in their best shots to win a prize. Thisis the design I made for them.",
+            "image": "/images/photomaster.jpg",
+            "codes": "HTML, CSS, Javascript",
+            "tools": "Wordpress, Illustrator, Photo Shop, Figma",
+            "link": "",
+            "video": ""
         },
         {
             "id": "12",
-            "heading": "1",
-            "subheading": "1",
-            "text": "1",
-            "image": "wimpers12.png"
+            "heading": "JT Photography",
+            "subheading": "",
+            "text": "Jonai Tan is a freelance photographer. He asked me to create a portfolio for him where people can find his work. This is the design I made for him",
+            "image": "/images/jt.jpg",
+            "codes": "HTML, CSS, Javascript",
+            "tools": "Wordpress, Illustrator, Photo Shop, Sketch",
+            "link": "",
+            "video": ""
+        },
+        {
+            "id": "13",
+            "heading": "BNT",
+            "subheading": "",
+            "text": "B&T Jeans was a small online pants selling company, this is the design I made for them.",
+            "image": "/images/bnt.jpg",
+            "codes": "HTML, CSS",
+            "tools": "Illustrator, Photo Shop",
+            "link": "",
+            "video": ""
+        },
+        {
+            "id": "14",
+            "heading": "Staggering Design",
+            "subheading": "",
+            "text": "Staggering Design was a small IT company that delivered IT solutions. This is the website i made for them.",
+            "image": "/images/staggeringdesign.jpg",
+            "codes": "HTML, CSS, Javascript",
+            "tools": "Illustrator, Photo Shop, Sketch",
+            "link": "",
+            "video": ""
         }
     ]
 }

@@ -18,23 +18,29 @@ const PopupTarieven = ({ switchOverlay }: any) => {
       onClick={closeTarieven}
       style={
         context.popupTarieven
-          ? { width: "auto", height: "90%" }
-          : { width: "0px", height: "0px" }
+          ? { width: "auto", height: "auto", opacity: "1" }
+          : { width: "0px", height: "0px", opacity: "0" }
       }
     >
       <div className={styles.popupContent}>
         <Image
-          src={"/prijzenlijst.png"}
+          src={context.currentPort.image}
           alt="404"
-          width="600"
-          height="750"
-          // style={
-          //   context.isMobile
-          //     ? { width: "100%", height: "auto" }
-          //     : { width: "600", height: "750" }
-          // }
+          width="500"
+          height="300"
           priority={true}
         />
+        <div className={styles.portfolioText}>
+          <h2>{context.currentPort.heading}</h2>
+          <p>{context.currentPort.text}</p>
+          <p>Tools:{context.currentPort.tools}</p>
+          <p>Codes:{context.currentPort.codes}</p>
+          {context.currentPort.link != "" && (
+            <a href={context.currentPort.link} rel="noreferrer" target="_blank">
+              <div className={styles.portfolioButton}>Preview</div>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

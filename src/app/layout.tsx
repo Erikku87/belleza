@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Belleza Stylist",
-  description: "Belleza Stylist. wimper lift & wimper extensions",
+  title: "Erikku Design",
+  description: "Erikku Design, UX / UI / Graphical / Front-End",
 };
 
 export default function RootLayout({

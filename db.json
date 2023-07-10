@@ -1,0 +1,109 @@
+{
+  "pictures": [
+    {
+      "id": "0",
+      "heading": "Octo",
+      "subheading": "",
+      "text": "I Started working at Octo as a freelance developer to create their first website. I have worked there for a year and created the design, front-end and back-end for the website. Now a few years later they turned into to Spotr.ai. Watch the video to see what I built for them.",
+      "image": "/images/octo.jpg"
+    },
+    {
+      "id": "1",
+      "heading": "waarderuil",
+      "subheading": "",
+      "text": "Waarderuil.nl is one of my personal projects. The goal is to create a platform that makes it easy for people to find and trade the right stuff so we can make this planet and it's resources more sustainable.",
+      "image": "/images/waarderuil.jpg"
+    },
+    {
+      "id": "2",
+      "heading": "Zenchi Records",
+      "subheading": "",
+      "text": "Next to a developer I also like to call myself a musician. Zenchi records is to be the website where I will publish my music to the world!",
+      "image": "/images/zenchirecords.jpg"
+    },
+    {
+      "id": "3",
+      "heading": "Rumah-Afra",
+      "subheading": "",
+      "text": "Rumah Afra is an artist. She is a dancer who likes to write and show her minimalistic lifestyle. Together we have come to a website which expresses exactly who she is.",
+      "image": "/images/rumah-afra.jpg"
+    },
+    {
+      "id": "4",
+      "heading": "Ninetysix Music",
+      "subheading": "",
+      "text": "Ninetysixmusic is an artist who makes music. Together we have created a really out of the box website to express her image as a musician.",
+      "image": "/images/96.jpg"
+    },
+    {
+      "id": "5",
+      "heading": "Woordenschat",
+      "subheading": "",
+      "text": "OWG is an organisation that creates educational games for children. They asked me to make a game where people could learn a language trough pictures and words",
+      "image": "/images/woordenschat.jpg"
+    },
+    {
+      "id": "6",
+      "heading": "Staggering Design",
+      "subheading": "",
+      "text": "Staggering Design was a small IT company that delivered IT solutions. This is the website i made for them.",
+      "image": "/images/staggeringdesign.jpg"
+    },
+    {
+      "id": "7",
+      "heading": "Platysign",
+      "subheading": "",
+      "text": "Platysign was my own first IT company which i started with some friends i knew from college. We did this for a couple of years but then went our own ways.",
+      "image": "/images/platysign.jpg"
+    },
+    {
+      "id": "8",
+      "heading": "Hoornse",
+      "subheading": "",
+      "text": "De Hoornse Damper is a store that sells vapes and supplies. I made a website for browsing their products and making a store order.",
+      "image": "/images/hoornse.jpg"
+    },
+    {
+      "id": "9",
+      "heading": "Photomaster",
+      "subheading": "",
+      "text": "Photomaster was a photo competition where people had to send in their best shots to win a prize. This is the design i made for them.",
+      "image": "/images/photomaster.jpg"
+    },
+    {
+      "id": "10",
+      "heading": "JT Photography",
+      "subheading": "",
+      "text": "Jonai Tan is a freelance photographer. He asked me to create a portfolio for him where people can find his work. This is the design I made for him",
+      "image": "/images/jt.jpg"
+    },
+    {
+      "id": "11",
+      "heading": "BNT",
+      "subheading": "",
+      "text": "B&T Jeans was a small online pants selling company, this is the design i made for them.",
+      "image": "/images/bnt.jpg"
+    },
+    {
+      "id": "12",
+      "heading": "Symbaloo",
+      "subheading": "",
+      "text": "Symbaloo is a platform which helps you manage bookmarks. They are located in Delft. I mainly worked on their gamification project and account reorganisation. I had a great year working there, learned a lot of new stuff and met some awesome colleagues!",
+      "image": "/images/symbaloo.svg"
+    },
+    {
+      "id": "13",
+      "heading": "Spin a movie",
+      "subheading": "",
+      "text": "Spin a movie is a website where you go when you don't know what to watch. Currently you can only search movies by keyword. My plans are to create an AI that will pick a movie for you to watch based on selected preferences.",
+      "image": "/images/spinamovie.jpg"
+    },
+    {
+      "id": "14",
+      "heading": "NA",
+      "subheading": "",
+      "text": "N/A",
+      "image": "/images/blankimage.jpg"
+    }
+  ]
+}

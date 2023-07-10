@@ -85,21 +85,17 @@ export const Footer = ({}: any) => {
             <div className={styles.footerBottom}>
               <div className={styles.websiteLinks}>
                 <div className={styles.footerLogo}>
-                  <Image
-                    src="/images/ed_logo.png"
-                    alt="404"
-                    width="70"
-                    height="60"
-                  />
+                  <Image src="/b.svg" alt="404" width="110" height="60" />
                 </div>
                 <ul>
-                  <li>Message</li>
-                  <li onClick={() => popRisico()}>Werkzaamheden</li>
+                  <li>Certificaten</li>
+                  <li onClick={() => popRisico()}>Eigen risico</li>
                   <li onClick={() => popTarieven()}>Tarieven</li>
                 </ul>
               </div>
               <div className={styles.copyright}>
-                Copyright © ErikkuDesign.com 2023 | All right reserved.
+                Powered by ErikkuDesign.com | Copyright © Belleza-stylist.com
+                2023 | All right reserved.
               </div>
             </div>
           </div>

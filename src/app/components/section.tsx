@@ -1,144 +1,74 @@
 import Image from "next/image";
-import styles from "../styles/profile.module.css";
+import styles from "../styles/page.module.css";
 import AppContext from "../context/appcontext";
 import { useEffect, useState, useContext } from "react";
 
 const Section = () => {
   const context: any = useContext(AppContext);
-  const navs = ["Identity", "Biography", "Projects", "Contact"];
-  const [navSelected, setNavSelected] = useState("");
-
-  useEffect(() => {
-    //alert('Finished loading')
-    document.getElementById("profilepicture")!.style.width = "21%";
-    document.getElementById("profileinfo")!.style.width = "70%";
-    document.getElementById("profilebuttons")!.style.width = "9%";
-    document.getElementById("profile")!.style.opacity = "1";
-
-    // return () => window.removeEventListener('resize', isMobileSize);
-  }, []);
-
-  const currentNav = (thisNav: any) => {
-    navs.forEach((nav) => {
-      const element = document.getElementById(nav);
-      if (element) {
-        element.style.transition = "all 1s ease";
-        element.style.backgroundColor = "transparent";
-        document.getElementById(nav)!.style.color = "black";
-      }
-    });
-
-    switch (thisNav) {
-      case "Identity":
-        document.getElementById("Identity")!.style.backgroundColor = "#781e1e";
-        document.getElementById("Identity")!.style.color = "white";
-        return (
-          <>
-            <div className={styles.navHeading}>{thisNav}</div>
-            <div>
-              <ul>
-                <li className={styles.label}>Name:</li>
-                <li>Eric T</li>
-                <li className={styles.label}>Occupation:</li>
-                <li>Developer | UX/UI Designer | Musician</li>
-                <li className={styles.label}>Country:</li>
-                <li>Netherlands</li>
-                <li className={styles.label}>E-mail:</li>
-                <li>Erikkudesign@gmail.com</li>
-              </ul>
-            </div>
-          </>
-        );
-      case "Biography":
-        document.getElementById("Biography")!.style.backgroundColor = "#781e1e";
-        document.getElementById("Biography")!.style.color = "white";
-        return (
-          <>
-            <div className={styles.navHeading}>{thisNav}</div>
-            <div className={styles.whoami}>
-              <p>
-                Hi, my name is Eric. I am a software developer located in The
-                Netherlands. From an early age, I have always been interested in
-                exploring new technology. It all started with playing computer
-                games as a kid. Next to playing a lot of games, I got interested
-                in how these games were created, which introduced me to
-                programming. I started creating small games and websites at the
-                time, more as a hobby than pursuing any career. From what
-                started as my hobby, I feel really lucky to be able to make a
-                living and a career now. Next to programming, I like to express
-                myself creatively by making visual designs and musical
-                compositions. The fundamentals of a great design lie in the
-                balance of functionality, Usability & User Experience. This is
-                what I have learned over the course of years and build my skills
-                up on.
-              </p>
-            </div>
-          </>
-        );
-      case "Contact":
-        document.getElementById("Contact")!.style.backgroundColor = "#781e1e";
-        document.getElementById("Contact")!.style.color = "white";
-        return (
-          <>
-            <div className={styles.navHeading}>{thisNav}</div>
-            <div className={styles.whoami}>
-              <p>Form tijdelijk buiten gebruik, gelieve te mailen naar:</p>
-              <br /> <br />
-              <h4>Erikkudesign@gmail.com</h4>
-            </div>
-          </>
-        );
-      case "Projects":
-        const targetElement = document.getElementById("galleryBorder");
-        targetElement!.scrollIntoView({ behavior: "smooth" });
-        return <></>;
-      default:
-        return (
-          <>
-            <br />
-            <div className={styles.intro}>
-              <h1>Erikku.Design</h1>
-            </div>
-            <div>
-              <h4>Welcome to my portfolio!</h4>
-            </div>
-          </>
-        );
-    }
-  };
-
   return (
-    <div className={styles.profileframe}>
-      <div id="profile" className={styles.profile}>
-        <div id="profilepicture" className={styles.profilepic}></div>
-        <div id="profilebuttons" className={styles.profilebuttons}>
-          <ul>
-            <li>
-              <Image
-                src="/images/ed_logo.png"
-                width={40}
-                height={40}
-                alt="404"
-              />
-            </li>
-
-            {navs.map((nav) => (
-              <button
-                id={nav}
-                type="button"
-                className={styles.profilebutton}
-                key={nav}
-                onClick={() => {
-                  setNavSelected(nav);
-                }}
-              >
-                <li className={styles.label}> {nav}</li>
-              </button>
-            ))}
-          </ul>
+    <div className={styles.section}>
+      <div className={styles.section1}>
+        <div className={styles.sectionLeft}>
+          <div className={styles.sectionImage}></div>
         </div>
-        <div id="profileinfo" className={styles.profileinfo}>
-          {currentNav(navSelected)}
+        <div className={styles.sectionRight}>
+          <div
+            className={styles.sectionRightHeading}
+            style={{ fontFamily: "Great Vibes" }}
+          >
+            One by One Extensions
+          </div>
+          <p>
+            Met de One by One techniek wordt er op elke gezond natuurlijke
+            wimper één extension geplaatst. De extensions worden met een
+            speciale lijm aangebracht. Extensions zijn verkrijgbaar in
+            verschillende lengtes, diktes en kleuren, zodat ik de perfecte stijl
+            kan creëren. Met de juiste styling lengte krul en dikte en gezonde
+            wimpers krijg je een verfrissende look. Een oog bevat gemiddeld
+            tussen de 90-120 natuurlijke wimpers. Je verliest per dag 2 tot 5
+            wimpers per dag. De natuurlijke wimpers vallen niet tegelijkertijd
+            daarom is het verstandig als je mooi look wilt behouden om de 2 a 3
+            weken terug te komen voor een opvul.
+          </p>
+        </div>
+      </div>
+      <div className={styles.section2}>
+        <div className={styles.sectionRight}>
+          <div
+            className={styles.sectionSvgHeading}
+            style={
+              context.isMobile
+                ? { width: "100%", height: "68px", position: "relative" }
+                : { width: "338px", height: "70px", position: "relative" }
+            }
+          >
+            <Image
+              id="logo"
+              src="/lashartpro_logo_white.png"
+              alt="404"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <p>
+            Bij Belleza Stylist werken wij met producten van Lash Art Pro. Deze
+            producten zijn erkend op de Nederlandse markt als van zeer hoge
+            kwaliteit. Zoals gequote "Wij willen anders zijn dan de huidige
+            markt, de lat ligt hoog, maar daar werken we het beste op. Al onze
+            producten worden getest door de beste artiesten uit verschillende
+            landen. Het komt pas op de markt als alles klopt."{" "}
+            <a
+              target="_blank"
+              href="https://www.lashartpro.com/nl/"
+              className={styles.lashartproLink}
+            >
+              <br />
+              <br />- https://www.lashartpro.com
+            </a>
+          </p>
+        </div>
+        <div className={styles.sectionLeft}>
+          <div className={styles.sectionImage2}></div>
         </div>
       </div>
     </div>

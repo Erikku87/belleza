@@ -8,15 +8,14 @@
 }
 
 .gridItem{
-  width:300px;
-  height:200px;
+  width:210px;
+  height:210px;
   background-color: #444;
   color: #fff;
   transform: scale(1.0);
   transition: all 0.5s ease-out;
 border-radius: 5px;
 overflow: hidden;
-background-color: white;
 }
 .gridItem:hover{
   transform: scale(1.05);
@@ -43,7 +42,8 @@ padding-bottom: 8px;
   width:80%;
   position: relative;
   padding:15px;
-
+  border-radius: 8px;
+  border: 1px solid #ffcb62;
 
   
 
@@ -123,16 +123,8 @@ left:-100px;
   color:#d6a556;
   transition: all 0.2s ease-out
 }
-@media (max-width: 1600px) {
-  .galleryGrid{
- 
-    grid-template-columns: repeat(3, 1fr); 
 
-  }
-}
-
-
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .galleryGrid{
  
     grid-template-columns: repeat(2, 1fr); 
@@ -141,11 +133,6 @@ left:-100px;
 }
 
 @media only screen and (max-width: 768px) {
-  .galleryGrid{
- 
-    grid-template-columns: repeat(1, 1fr); 
-
-  }
   .galleryBorder{
     width:100%;
     padding:15px;
@@ -153,7 +140,8 @@ left:-100px;
     margin: 60px 0px;
   }
   .gridItem{
-
+    width:140px;
+    height:140px;
     background-color: #444;
     color: #fff;
     transform: scale(1.0);

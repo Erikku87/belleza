@@ -1,5 +1,4 @@
 .popupWrap{
-  
   width:0px;
   height:0px;
 position:fixed;
@@ -7,31 +6,15 @@ z-index: 99;
 top:50%;
 left:50%;
 transform:translate(-50%, -50%);
-opacity: 0;
 
-overflow-y:auto;
-background-color: white;
-border-radius: 10px;
-transition: all 1s ease;
+overflow-y:scroll;
+
 }
-.portfolioText{
-  height:100%;
-  display: flex;
-  gap:30px;
-  flex-direction: column;
-}
-.portfolioButton{
-  padding: 20px;
-  color:781e1e;
-  border: 1px solid #781e1e;
-}
+
 .popupContent{
-  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:30px;
-
 }
 
 .eigenRisico{
@@ -48,13 +31,4 @@ transition: all 1s ease;
 
   flex-direction: column;
   gap:50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .popupContent{
-    flex-direction: column;
-  }
-  .popupWrap{
-    width: 100%;
-  }
 }

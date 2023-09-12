@@ -43,7 +43,7 @@ padding-bottom: 8px;
   position: relative;
   padding:15px;
   border-radius: 8px;
-  border: 1px solid #ffcb62;
+  border: 2px solid #d6a556;
 
   
 
@@ -63,7 +63,7 @@ left:-100px;
   width:60px;
   height:60px;
   cursor: pointer;
-  border:2px solid #ffcb62;
+  border:2px solid #d6a556;
 
   background: rgba(0, 0, 0, 0.3); 
 
@@ -73,7 +73,7 @@ left:-100px;
   width:60px;
   height:60px;
   cursor: pointer;
-  border:2px solid #ffcb62;
+  border:2px solid #d6a556;
 
 
 

@@ -3,7 +3,6 @@
   flex-direction: column;
 justify-content: center;
 align-items: center;
-background-color: black;
 height: 100%;
 background-image: url(/bg5.png);
 background-size: contain;
@@ -31,12 +30,18 @@ background-size: contain;
   border-radius: 8px;
   width: 80%;
   border: 3px solid #d6a556;
-  background: rgba(0, 0, 0, 1) 
+  background-color: white;
+  background-image: url(/marblelong2.png);
+  background-size: cover;
 
 }
-.mainLogo{
-
-position: absolute;
+.mainLogoWrap{
+  width:345px;
+  height:345px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 margin-left: auto;
 margin-right: auto;
 left: 0;
@@ -44,12 +49,16 @@ right: 0;
 top:-140px;
 border-radius: 50%;
 z-index: 3;
-background-color: transparent;
+background-color: white;
 filter: drop-shadow(1px 5px 5px rgb(0 0 0 / 0.4));
+background-image: url(/marblelong2.png);
+background-size: contain;
 }
-.mainLogo img{
-  display: block;
+.mainLogo{
+
+
 }
+
 
 .bannerWrap{
   display: flex;
@@ -68,7 +77,7 @@ filter: drop-shadow(1px 5px 5px rgb(0 0 0 / 0.4));
   flex-direction: column;
   width:80%;
   gap:50px;
-  background-color: black;
+
 }
 .lashartproLink:hover{
   color:#d6a556;
@@ -80,7 +89,25 @@ filter: drop-shadow(1px 5px 5px rgb(0 0 0 / 0.4));
   display: flex;
   width:100%;
   gap:50px;
-  background-color: black;
+
+}
+
+.cursusButtonWrap{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+
+}
+.cursusButton{
+  width:150px;
+  display: flex;
+  justify-content: center;
+  padding:12px;
+  cursor: pointer;
+  border: 2px solid #d6a556;
+  border-radius: 5px;
+
 }
 .section2{
   margin-top: 40px;
@@ -88,7 +115,7 @@ filter: drop-shadow(1px 5px 5px rgb(0 0 0 / 0.4));
   gap:50px;
   width:100%;
   
-  background-color: black;
+
 }
 
 .sectionLeft{
@@ -111,7 +138,7 @@ border-radius:5px;
 
   flex-direction: column;
   width:50%;
-color:white;
+color:black;
 
 }
 

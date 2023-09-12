@@ -84,12 +84,13 @@
 
 html,
 body {
-  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Great Vibes', cursive; */
 }
 
 body {
-  font-family: 'Great Vibes', cursive;
-background-color: black;
+  /* font-family: 'Great Vibes', cursive; */
+  background-image: url(/marble.jpg);
+  background-size: contain;
 }
 
 a {

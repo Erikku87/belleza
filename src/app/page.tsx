@@ -15,6 +15,7 @@ import Tarieven from "./components/tarieven";
 import Info from "./components/info";
 import PopupTarieven from "./components/popupTarieven";
 import PopupRisico from "./components/popupRisico";
+import PopupCursus from "./components/popupCursus";
 
 export default function Home() {
   // const [widthBanner, setWidthBanner] = useState<number>(0);
@@ -25,6 +26,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [popupRisico, setPopupRisico] = useState(false);
   const [popupTarieven, setPopupTarieven] = useState(false);
+  const [popupCursus, setPopupCursus] = useState(false);
   const isMobileSize = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
@@ -70,6 +72,9 @@ export default function Home() {
     } else if (popupRisico) {
       switchOverlay();
       setPopupRisico(false);
+    } else if (popupCursus) {
+      switchOverlay();
+      setPopupCursus(false);
     } else {
       overLayImage();
     }
@@ -95,24 +100,28 @@ export default function Home() {
           setPopupRisico,
           popupTarieven,
           setPopupTarieven,
+          popupCursus,
+          setPopupCursus,
         }}
       >
         <main className={styles.main}>
           <Navigation />
           <div className={styles.goldBorder}>
-            <Image
-              className={styles.mainLogo}
-              id="logo"
-              src="/rond_new_color.svg"
-              alt="404"
-              width="350"
-              height="350"
-              style={
-                isMobile
-                  ? { width: "300px", height: "300px" }
-                  : { width: "350px", height: "350px" }
-              }
-            />
+            <div className={styles.mainLogoWrap}>
+              <Image
+                className={styles.mainLogo}
+                id="logo"
+                src="/updatelogo2.svg"
+                alt="404"
+                width="350"
+                height="350"
+                // style={
+                //   isMobile
+                //     ? { width: "300px", height: "300px" }
+                //     : { width: "350px", height: "350px" }
+                // }
+              />
+            </div>
             <Carousel />
             <About />
             <Section />
@@ -137,6 +146,7 @@ export default function Home() {
         </div>
         <PopupTarieven />
         <PopupRisico />
+        <PopupCursus />
       </AppContext.Provider>
     </>
   );

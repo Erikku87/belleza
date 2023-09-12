@@ -55,7 +55,7 @@
 .navigationLeft ul li{
   transform: scale(1.0);
   font-size: 20px;
-  background: -webkit-linear-gradient(#ebc442,#ffcb62);
+  background: -webkit-linear-gradient(#ebc442,#d6a556);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s ease-out
@@ -64,7 +64,7 @@
 .navigationRight ul li{
   transform: scale(1.0);
   font-size: 20px;
-  background: -webkit-linear-gradient(#ebc442,#ffcb62);
+  background: -webkit-linear-gradient(#ebc442,#d6a556);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s ease-out

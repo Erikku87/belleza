@@ -30,6 +30,18 @@ export const Footer = ({}: any) => {
       context.setOverlay(false);
     }
   };
+
+  const popCursus = () => {
+    // const popopWrap = document.getElementById("popupWrap") as HTMLDivElement;
+    if (!context.popupCursus) {
+      context.setPopupCursus(true);
+      context.setOverlay(true);
+    } else {
+      context.setPopupCursus(false);
+      context.setOverlay(false);
+    }
+  };
+
   return (
     <>
       <div className={styles.footerBar}>
@@ -91,6 +103,7 @@ export const Footer = ({}: any) => {
                   <li>Certificaten</li>
                   <li onClick={() => popRisico()}>Eigen risico</li>
                   <li onClick={() => popTarieven()}>Tarieven</li>
+                  <li onClick={() => popCursus()}>One by One Cursus</li>
                 </ul>
               </div>
               <div className={styles.copyright}>

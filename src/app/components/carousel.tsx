@@ -94,6 +94,7 @@ const Carousel = () => {
   return (
     <div className={styles.carouselWrap}>
       <div id="carouselView" className={styles.carouselView}>
+        
         <div id="carouselBanners" className={styles.carouselBanners}>
           {bannerData.banners.map((banner: Banner) => (
             <div

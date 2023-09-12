@@ -5,6 +5,18 @@ import { useEffect, useState, useContext } from "react";
 
 const Section = () => {
   const context: any = useContext(AppContext);
+
+  const popCursus = () => {
+    // const popopWrap = document.getElementById("popupWrap") as HTMLDivElement;
+    if (!context.popupCursus) {
+      context.setPopupCursus(true);
+      context.setOverlay(true);
+    } else {
+      context.setPopupCursus(false);
+      context.setOverlay(false);
+    }
+  };
+
   return (
     <div className={styles.section}>
       <div className={styles.section1}>
@@ -30,6 +42,9 @@ const Section = () => {
             daarom is het verstandig als je mooi look wilt behouden om de 2 a 3
             weken terug te komen voor een opvul.
           </p>
+          <div className={styles.cursusButtonWrap} onClick={() => popCursus()}>
+            <div className={styles.cursusButton}>Bekijk Cursus</div>
+          </div>
         </div>
       </div>
       <div className={styles.section2}>
@@ -44,7 +59,7 @@ const Section = () => {
           >
             <Image
               id="logo"
-              src="/lashartpro_logo_white.png"
+              src="/lashartpro_logo_black.png"
               alt="404"
               fill
               style={{ objectFit: "cover" }}

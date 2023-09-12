@@ -7,7 +7,7 @@ width:80%;
 
   position: relative;
   border-radius: 8px;
-  border: 1px solid #d6a556;
+  border: 2px solid #d6a556;
 }
 .tarievenHeading{
 
@@ -23,7 +23,7 @@ width:80%;
   font-size:20px;
   padding:50px;
   width:100%;
-  color:white;
+
   text-align: center;
   cursor: pointer;
 
@@ -58,7 +58,7 @@ width:75%;
   margin-bottom: 20px;
   padding:20px 30px;
   font-size: 40px !important;
-  border-bottom: 3px solid #ffcb62;
+  border-bottom: 3px solid #d6a556;
 }
 @media only screen and (max-width: 768px) {
   .tarievenHeading{
@@ -70,7 +70,7 @@ width:75%;
     padding:0px;
     position: relative;
     border-radius: 8px;
-    border: 1px solid #d6a556;
+    border: 2px solid #d6a556;
     
   }
   .tarievenTabel{
